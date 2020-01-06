@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {NzMessageService} from 'ng-zorro-antd/message';
 @Component({
   selector: 'app-todolist',
   templateUrl: './todolist.component.html',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TodolistComponent implements OnInit {
   public keyword:string;
   public todolist:any[]=[];
-  constructor() { }
+  constructor(private msg:NzMessageService) { }
 
   ngOnInit() {
   }
@@ -22,7 +22,8 @@ export class TodolistComponent implements OnInit {
         });
       }
       else{
-        alert(`${this.keyword} have exist`);
+        // alert(`${this.keyword} have exist`);
+        this.msg.warning(`${this.keyword} have exist`)
       }  
     }
 
