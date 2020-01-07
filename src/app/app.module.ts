@@ -11,12 +11,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 
+import {SearchComponent} from 'src/app/components/search/search.component';
+///引入并配置服务
+import {StorageService} from 'src/app/services/storage.service';
 registerLocaleData(zh);
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    TodolistComponent
+    TodolistComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  providers: [{ provide: NZ_I18N, useValue: zh_CN },StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
