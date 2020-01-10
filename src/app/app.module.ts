@@ -12,8 +12,12 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 
 import {SearchComponent} from 'src/app/components/search/search.component';
+import {HomeComponent} from 'src/app/components/home/home.component';
+import {NewsComponent} from 'src/app/components/news/news.component'
 ///引入并配置服务
 import {StorageService} from 'src/app/services/storage.service';
+import { HeaderComponent } from './components/header/header.component';
+import { TransitionComponent } from './components/transition/transition.component';
 registerLocaleData(zh);
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ registerLocaleData(zh);
     FormComponent,
     TodolistComponent,
     SearchComponent,
+    HomeComponent,
+    NewsComponent,
+    HeaderComponent,
+    TransitionComponent,
   ],
   imports: [
     BrowserModule,
