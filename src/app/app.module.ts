@@ -18,6 +18,8 @@ import {NewsComponent} from 'src/app/components/news/news.component'
 import {StorageService} from 'src/app/services/storage.service';
 import { HeaderComponent } from './components/header/header.component';
 import { TransitionComponent } from './components/transition/transition.component';
+import { PComponentComponent } from './components/parentAndChild/p-component/p-component.component';
+import { ChildComponentComponent } from './components/parentAndChild/child-component/child-component.component';
 registerLocaleData(zh);
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ registerLocaleData(zh);
     NewsComponent,
     HeaderComponent,
     TransitionComponent,
+    PComponentComponent,
+    ChildComponentComponent,
   ],
   imports: [
     BrowserModule,

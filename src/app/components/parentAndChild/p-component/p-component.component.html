@@ -1,0 +1,7 @@
+<app-child-component #childA [msg]="title" [run]="run" [parent]="this"></app-child-component>
+
+<p>我是父组件!!!</p>
+<button (click)="getChildTitle()">获取子组件中的title</button>
+<br>
+<button (click)="getChildRun()">执行子组件中的方法</button>
+
