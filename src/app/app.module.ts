@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TransitionComponent } from './components/transition/transition.component';
 import { PComponentComponent } from './components/parentAndChild/p-component/p-component.component';
 import { ChildComponentComponent } from './components/parentAndChild/child-component/child-component.component';
+import { LifecycleComponent } from './components/lifecycle/lifecycle.component';
 registerLocaleData(zh);
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ registerLocaleData(zh);
     TransitionComponent,
     PComponentComponent,
     ChildComponentComponent,
+    LifecycleComponent,
   ],
   imports: [
     BrowserModule,

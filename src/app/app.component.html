@@ -6,4 +6,11 @@
 <!-- <app-news></app-news> -->
 
 <!-- <app-transition></app-transition> -->
-<app-p-component></app-p-component>
+<!-- <app-p-component></app-p-component> -->
+<!--生命周期开始-->
+<app-lifecycle [title]="title" *ngIf="flag"></app-lifecycle>
+<br>
+<button (click)="changeTitle()">改变title</button>
+<br>
+<button (click)="changeFlag()">改变子组件</button>
+<!-- 生命周期结束-->
